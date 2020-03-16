@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_aep2020" default="compile.module.aep2020">
+  <dirname property="module.aep2020.basedir" file="${ant.file.module_aep2020}"/>
+  
+  <property name="module.jdk.home.aep2020" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.aep2020" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.aep2020" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.aep2020" value="-encoding UTF-8 -source 10 -target 10 ${compiler.args}"/>
+  
+  <property name="aep2020.output.dir" value="${module.aep2020.basedir}/out/production/aep2020"/>
+  <property name="aep2020.testoutput.dir" value="${module.aep2020.basedir}/out/test/aep2020"/>
+  
+  <path id="aep2020.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="aep2020.module.production.classpath">
+    <path refid="${module.jdk.classpath.aep2020}"/>
+    <path refid="library.lib.classpath"/>
+  </path>
+  
+  <path id="aep2020.runtime.production.module.classpath">
+    <pathelement location="${aep2020.output.dir}"/>
+    <path refid="library.lib.classpath"/>
+  </path>
+  
+  <path id="aep2020.module.classpath">
+    <path refid="${module.jdk.classpath.aep2020}"/>
+    <pathelement location="${aep2020.output.dir}"/>
+    <path refid="library.lib.classpath"/>
+  </path>
+  
+  <path id="aep2020.runtime.module.classpath">
+    <pathelement location="${aep2020.testoutput.dir}"/>
+    <pathelement location="${aep2020.output.dir}"/>
+    <path refid="library.lib.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.aep2020">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.aep2020">
+    <patternset refid="excluded.from.module.aep2020"/>
+  </patternset>
+  
+  <path id="aep2020.module.sourcepath">
+    <dirset dir="${module.aep2020.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  <path id="aep2020.module.test.sourcepath">
+    <dirset dir="${module.aep2020.basedir}">
+      <include name="test"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.aep2020" depends="compile.module.aep2020.production,compile.module.aep2020.tests" description="Compile module aep2020"/>
+  
+  <target name="compile.module.aep2020.production" depends="register.custom.compilers" description="Compile module aep2020; production classes">
+    <mkdir dir="${aep2020.output.dir}"/>
+    <javac2 destdir="${aep2020.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.aep2020}/javac">
+      <compilerarg line="${compiler.args.aep2020}"/>
+      <bootclasspath refid="aep2020.module.bootclasspath"/>
+      <classpath refid="aep2020.module.production.classpath"/>
+      <src refid="aep2020.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.aep2020"/>
+    </javac2>
+    
+    <copy todir="${aep2020.output.dir}">
+      <fileset dir="${module.aep2020.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.aep2020.tests" depends="register.custom.compilers,compile.module.aep2020.production" description="compile module aep2020; test classes" unless="skip.tests">
+    <mkdir dir="${aep2020.testoutput.dir}"/>
+    <javac2 destdir="${aep2020.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.aep2020}/javac">
+      <compilerarg line="${compiler.args.aep2020}"/>
+      <bootclasspath refid="aep2020.module.bootclasspath"/>
+      <classpath refid="aep2020.module.classpath"/>
+      <src refid="aep2020.module.test.sourcepath"/>
+      <patternset refid="excluded.from.compilation.aep2020"/>
+    </javac2>
+    
+    <copy todir="${aep2020.testoutput.dir}">
+      <fileset dir="${module.aep2020.basedir}/test">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="clean.module.aep2020" description="cleanup module">
+    <delete dir="${aep2020.output.dir}"/>
+    <delete dir="${aep2020.testoutput.dir}"/>
+  </target>
+</project>
