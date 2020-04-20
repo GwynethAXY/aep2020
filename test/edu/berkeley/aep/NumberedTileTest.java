@@ -22,7 +22,7 @@ public class NumberedTileTest {
     }
 
     @Test
-    public void fiveSixSevenBambooChowShouldBeLegal(){
+    public void fiveSixSevenBambooChowIsLegal(){
         NumberedTile fiveBamboo = new NumberedTile(NumberedTile.Suit.BAMBOO, NumberedTile.Number.FIVE, NumberedTile.Id.TWO);
         NumberedTile sixBamboo = new NumberedTile(NumberedTile.Suit.BAMBOO, NumberedTile.Number.SIX, NumberedTile.Id.TWO);
         NumberedTile sevenBamboo = new NumberedTile(NumberedTile.Suit.BAMBOO, NumberedTile.Number.SEVEN, NumberedTile.Id.TWO);
@@ -32,7 +32,7 @@ public class NumberedTileTest {
     }
 
     @Test
-    public void oneSixSevenCharactersChowShouldBeIllegal(){
+    public void oneSixSevenCharactersChowIsIllegal(){
         NumberedTile oneCharacter = new NumberedTile(NumberedTile.Suit.CHARACTER, NumberedTile.Number.ONE, NumberedTile.Id.ONE);
         NumberedTile sixCharacter = new NumberedTile(NumberedTile.Suit.CHARACTER, NumberedTile.Number.SIX, NumberedTile.Id.TWO);
         NumberedTile sevenCharacter = new NumberedTile(NumberedTile.Suit.CHARACTER, NumberedTile.Number.SEVEN, NumberedTile.Id.THREE);
@@ -56,8 +56,6 @@ public class NumberedTileTest {
         NumberedTile nineBambooIdOne = new NumberedTile(NumberedTile.Suit.BAMBOO, NumberedTile.Number.NINE, NumberedTile.Id.ONE);
         NumberedTile nineBambooIdTwo = new NumberedTile(NumberedTile.Suit.BAMBOO, NumberedTile.Number.NINE, NumberedTile.Id.TWO);
         NumberedTile nineBambooIdFour = new NumberedTile(NumberedTile.Suit.BAMBOO, NumberedTile.Number.NINE, NumberedTile.Id.FOUR);
-        assertTrue(nineBambooIdOne.canPong(nineBambooIdTwo,nineBambooIdFour));
-        assertTrue(nineBambooIdTwo.canPong(nineBambooIdOne,nineBambooIdFour));
         assertTrue(nineBambooIdFour.canPong(nineBambooIdOne,nineBambooIdTwo));
     }
 
@@ -67,8 +65,15 @@ public class NumberedTileTest {
         NumberedTile nineCharacter = new NumberedTile(NumberedTile.Suit.CHARACTER, NumberedTile.Number.NINE, NumberedTile.Id.TWO);
         NumberedTile nineBamboo = new NumberedTile(NumberedTile.Suit.BAMBOO, NumberedTile.Number.NINE, NumberedTile.Id.FOUR);
         assertFalse(nineDots.canPong(nineCharacter,nineBamboo));
-        assertFalse(nineCharacter.canPong(nineDots,nineBamboo));
-        assertFalse(nineBamboo.canPong(nineDots,nineCharacter));
+    }
+
+    @Test
+    public void fourTwoCharacterKangIsLegal(){
+        NumberedTile twoCharacterIdOne = new NumberedTile(NumberedTile.Suit.CHARACTER, NumberedTile.Number.TWO, NumberedTile.Id.ONE);
+        NumberedTile twoCharacterIdTwo = new NumberedTile(NumberedTile.Suit.CHARACTER, NumberedTile.Number.TWO, NumberedTile.Id.TWO);
+        NumberedTile twoCharacterIdThree = new NumberedTile(NumberedTile.Suit.CHARACTER, NumberedTile.Number.TWO, NumberedTile.Id.THREE);
+        NumberedTile twoCharacterIdFour = new NumberedTile(NumberedTile.Suit.CHARACTER, NumberedTile.Number.TWO, NumberedTile.Id.FOUR);
+        assertTrue(twoCharacterIdFour.canKang(twoCharacterIdOne,twoCharacterIdTwo,twoCharacterIdThree));
     }
 
 

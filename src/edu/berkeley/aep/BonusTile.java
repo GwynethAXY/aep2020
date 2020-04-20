@@ -64,4 +64,14 @@ public class BonusTile implements Tile{
     public boolean equals(Tile other) {
         return false;
     }
+
+    @Override
+    public boolean canPong(Tile inHandOne, Tile inHandTwo) {
+        return false;
+    }
+
+    @Override
+    public boolean canKang(Tile inHandOne, Tile inHandTwo, Tile inHandThree) {
+        return false;
+    }
 }

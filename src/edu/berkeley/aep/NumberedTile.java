@@ -34,7 +34,6 @@ public class NumberedTile implements Tile {
         }
     }
 
-
     enum Id {
         ONE(1),
         TWO(2),
@@ -66,8 +65,15 @@ public class NumberedTile implements Tile {
         return true;
     }
 
-    public boolean canPong(NumberedTile inHandOne, NumberedTile inHandTwo){
+    @Override
+    public boolean canPong(Tile inHandOne, Tile inHandTwo){
         if (this.equals(inHandOne) && this.equals(inHandTwo)) return true;
+        return false;
+    }
+
+    @Override
+    public boolean canKang(Tile inHandOne, Tile inHandTwo, Tile inHandThree){
+        if (this.equals(inHandOne) && this.equals(inHandTwo) && this.equals(inHandThree)) return true;
         return false;
     }
 
