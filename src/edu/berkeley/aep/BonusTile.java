@@ -1,6 +1,6 @@
 package edu.berkeley.aep;
 
-public class BonusTile {
+public class BonusTile implements Tile{
     public Season season;
     public Flower flower;
     public Animal animal;
@@ -17,6 +17,7 @@ public class BonusTile {
         this.animal = animal;
     }
 
+
     enum Season {
         SPRING, SUMMER, AUTUMN, WINTER;
     }
@@ -29,15 +30,27 @@ public class BonusTile {
         CAT, RAT, ROOSTER, CENTIPEDE;
     }
 
-    public boolean bonusTilePair(BonusTile other){
-        if ((this.season == Season.SPRING && other.flower == BonusTile.Flower.PLUM) || (other.season == BonusTile.Season.SPRING && this.flower == BonusTile.Flower.PLUM)){
+    public boolean bonusTileFlowerSeasonPair(BonusTile other){
+        if ((this.season == Season.SPRING && other.flower == Flower.PLUM) || (other.season == Season.SPRING && this.flower == Flower.PLUM)){
             return true;
         } else if ((this.season == Season.SUMMER && other.flower == Flower.ORCHID) || (other.season == Season.SUMMER && this.flower == Flower.ORCHID)){
             return true;
-        } else if ((this.season == Season.AUTUMN && other.flower == BonusTile.Flower.CHRYSANTHEMUM) || (other.season == BonusTile.Season.AUTUMN && this.flower == Flower.CHRYSANTHEMUM)){
+        } else if ((this.season == Season.AUTUMN && other.flower == Flower.CHRYSANTHEMUM) || (other.season == Season.AUTUMN && this.flower == Flower.CHRYSANTHEMUM)){
             return true;
-        }else if ((this.season == BonusTile.Season.WINTER && other.flower == BonusTile.Flower.BAMBOO) || (other.season == BonusTile.Season.WINTER && this.flower == BonusTile.Flower.BAMBOO)){
+        }else if ((this.season == Season.WINTER && other.flower == Flower.BAMBOO) || (other.season == Season.WINTER && this.flower == Flower.BAMBOO)){
             return true;
         } else return false;
+    }
+
+    public boolean bonusTileAnimalPair(BonusTile other){
+        if ((this.animal == Animal.CAT && other.animal == Animal.RAT) || (other.animal == Animal.CAT && this.animal == Animal.RAT)){
+            return true;
+        } else if ((this.animal == Animal.ROOSTER && other.animal == Animal.CENTIPEDE) || (other.animal == Animal.ROOSTER && this.animal == Animal.CENTIPEDE)){
+            return true;
+        } else return false;
+    }
+    @Override
+    public boolean equals(Tile other) {
+        return false;
     }
 }
