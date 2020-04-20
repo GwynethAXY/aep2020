@@ -1,5 +1,7 @@
 package edu.berkeley.aep;
 
+import java.util.Arrays;
+
 public class NumberedTile implements Tile {
     public Number number;
     public Suit suit;
@@ -12,7 +14,7 @@ public class NumberedTile implements Tile {
     }
 
     enum Suit {
-        BAMBOO, CIRCLE, THOUSAND, POWER, FLOWER
+        BAMBOO, DOTS, CHARACTER, POWER, FLOWER
     }
 
     enum Number {
@@ -31,6 +33,7 @@ public class NumberedTile implements Tile {
             this.number = number;
         }
     }
+
 
     enum Id {
         ONE(1),
@@ -51,5 +54,16 @@ public class NumberedTile implements Tile {
             return this.number == otherTile.number && this.suit == otherTile.suit;
         }
         return false;
+    }
+
+    public boolean canChow(NumberedTile inHandOne, NumberedTile inHandTwo){
+        Suit suit = this.suit;
+        if (inHandOne.suit != suit || inHandTwo.suit != suit) return false;
+        int [] array = {this.number.number, inHandOne.number.number, inHandTwo.number.number};
+        Arrays.sort(array);
+        for (int i = 0; i < array.length-1; i++) {
+            if(array[i+1] - array[i] != 1) return false;
+        }
+        return true;
     }
 }
