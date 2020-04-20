@@ -19,17 +19,28 @@ public class BonusTile implements Tile{
 
 
     enum Season {
-        SPRING, SUMMER, AUTUMN, WINTER;
+        SPRING(Wind.EAST), SUMMER(Wind.SOUTH), AUTUMN(Wind.WEST), WINTER(Wind.NORTH);
+        Wind wind;
+        Season(Wind wind){
+            this.wind = wind;
+        }
     }
 
     enum Flower {
-        PLUM, ORCHID, CHRYSANTHEMUM, BAMBOO;
+        PLUM(Wind.EAST), ORCHID(Wind.SOUTH), CHRYSANTHEMUM(Wind.WEST), BAMBOO((Wind.NORTH));
+        Wind wind;
+        Flower(Wind wind){
+            this.wind = wind;
+        }
     }
 
     enum Animal {
         CAT, RAT, ROOSTER, CENTIPEDE;
     }
 
+    enum Wind{
+        EAST, SOUTH, WEST, NORTH
+    }
     public boolean bonusTileFlowerSeasonPair(BonusTile other){
         if ((this.season == Season.SPRING && other.flower == Flower.PLUM) || (other.season == Season.SPRING && this.flower == Flower.PLUM)){
             return true;
