@@ -14,7 +14,7 @@ public class NumberedTile implements Tile {
     }
 
     enum Suit {
-        BAMBOO, DOTS, CHARACTER, POWER, FLOWER
+        BAMBOO, DOTS, CHARACTER
     }
 
     enum Number {
@@ -57,8 +57,7 @@ public class NumberedTile implements Tile {
     }
 
     public boolean canChow(NumberedTile inHandOne, NumberedTile inHandTwo){
-        Suit suit = this.suit;
-        if (inHandOne.suit != suit || inHandTwo.suit != suit) return false;
+        if (inHandOne.suit != this.suit || inHandTwo.suit != this.suit) return false;
         int [] array = {this.number.number, inHandOne.number.number, inHandTwo.number.number};
         Arrays.sort(array);
         for (int i = 0; i < array.length-1; i++) {
@@ -66,4 +65,10 @@ public class NumberedTile implements Tile {
         }
         return true;
     }
+
+    public boolean canPong(NumberedTile inHandOne, NumberedTile inHandTwo){
+        if (this.equals(inHandOne) && this.equals(inHandTwo)) return true;
+        return false;
+    }
+
 }
