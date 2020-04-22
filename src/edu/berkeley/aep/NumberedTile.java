@@ -77,4 +77,8 @@ public class NumberedTile implements Tile {
         return false;
     }
 
+    public void chow(){
+
+    }
+
 }
