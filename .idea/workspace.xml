@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddb396da-3635-4735-801b-f4dcd118ac06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/edu/berkeley/aep/TilesToDrawTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/berkeley/aep/NumberedTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/berkeley/aep/NumberedTile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/berkeley/aep/PlayingTiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/berkeley/aep/TilesToDraw.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/edu/berkeley/aep/NumberedTileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/edu/berkeley/aep/NumberedTileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/berkeley/aep/TilesToDraw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/berkeley/aep/TilesToDraw.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/edu/berkeley/aep/TilesToDrawTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/edu/berkeley/aep/TilesToDrawTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,7 +31,7 @@
         <counts>
           <entry key="class" value="5" />
           <entry key="iml" value="1" />
-          <entry key="java" value="22" />
+          <entry key="java" value="24" />
           <entry key="properties" value="1" />
           <entry key="xml" value="3" />
           <entry key="yml" value="1" />
@@ -44,7 +41,7 @@
         <counts>
           <entry key="CLASS" value="5" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="22" />
+          <entry key="JAVA" value="24" />
           <entry key="Properties" value="1" />
           <entry key="XML" value="3" />
           <entry key="YAML" value="1" />
@@ -53,13 +50,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
-          <entry key="java" value="4676" />
+          <entry key="java" value="5646" />
           <entry key="txt" value="143" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4676" />
+          <entry key="JAVA" value="5646" />
           <entry key="PLAIN_TEXT" value="156" />
         </counts>
       </usages-collector>
@@ -79,8 +76,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/berkeley/aep/NumberedTile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
+            <state relative-caret-position="133">
               <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/berkeley/aep/TilesToDraw.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="347">
+              <caret line="72" column="73" selection-start-line="72" selection-start-column="73" selection-end-line="72" selection-end-column="73" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#149#155#0" expanded="true" />
+                <element signature="e#1550#1556#0" expanded="true" />
+                <element signature="e#1604#1610#0" expanded="true" />
+                <element signature="e#1658#1664#0" expanded="true" />
+                <element signature="e#1712#1718#0" expanded="true" />
+                <element signature="e#1874#1891#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -97,23 +112,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/edu/berkeley/aep/NumberedTileTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1215">
-              <caret line="81" selection-start-line="81" selection-end-line="81" />
+            <state relative-caret-position="783">
+              <caret line="77" selection-start-line="77" selection-end-line="77" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/berkeley/aep/TilesToDraw.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#149#155#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -122,8 +124,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/edu/berkeley/aep/TilesToDrawTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+            <state relative-caret-position="377">
+              <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -191,6 +193,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>of begi</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -204,8 +211,8 @@
         <option value="$PROJECT_DIR$/src/edu/berkeley/aep/BonusTile.java" />
         <option value="$PROJECT_DIR$/src/edu/berkeley/aep/HonorTile.java" />
         <option value="$PROJECT_DIR$/test/edu/berkeley/aep/HonorTileTest.java" />
-        <option value="$PROJECT_DIR$/test/edu/berkeley/aep/NumberedTileTest.java" />
         <option value="$PROJECT_DIR$/src/edu/berkeley/aep/NumberedTile.java" />
+        <option value="$PROJECT_DIR$/test/edu/berkeley/aep/NumberedTileTest.java" />
         <option value="$PROJECT_DIR$/src/edu/berkeley/aep/TilesToDraw.java" />
         <option value="$PROJECT_DIR$/test/edu/berkeley/aep/TilesToDrawTest.java" />
       </list>
@@ -276,7 +283,7 @@
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="aep2020" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587574051805" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587577203709" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -298,51 +305,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TilesToDrawTest.startOfGameShouldHaveHundredFortyEightTiles">
-    <configuration name="HonorTileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aep2020" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.berkeley.aep.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.berkeley.aep" />
-      <option name="MAIN_CLASS_NAME" value="edu.berkeley.aep.HonorTileTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HonorTileTest.fourWhiteDragonKangShouldBeLegal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aep2020" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.berkeley.aep.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.berkeley.aep" />
-      <option name="MAIN_CLASS_NAME" value="edu.berkeley.aep.HonorTileTest" />
-      <option name="METHOD_NAME" value="fourWhiteDragonKangShouldBeLegal" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NumberedTileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aep2020" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.berkeley.aep.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.berkeley.aep" />
-      <option name="MAIN_CLASS_NAME" value="edu.berkeley.aep.NumberedTileTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TilesToDrawTest">
     <configuration name="TilesToDrawTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aep2020" />
       <extension name="coverage">
@@ -353,6 +316,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="edu.berkeley.aep" />
       <option name="MAIN_CLASS_NAME" value="edu.berkeley.aep.TilesToDrawTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TilesToDrawTest.playerTwoThreeFourShouldStartWithFourteenTiles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aep2020" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.berkeley.aep.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.berkeley.aep" />
+      <option name="MAIN_CLASS_NAME" value="edu.berkeley.aep.TilesToDrawTest" />
+      <option name="METHOD_NAME" value="playerTwoThreeFourShouldStartWithFourteenTiles" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -373,20 +352,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TilesToDrawTest.tilePileShouldHaveHundredSeventyThreeTilesAfterFirstDraw" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aep2020" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.berkeley.aep.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.berkeley.aep" />
+      <option name="MAIN_CLASS_NAME" value="edu.berkeley.aep.TilesToDrawTest" />
+      <option name="METHOD_NAME" value="tilePileShouldHaveHundredSeventyThreeTilesAfterFirstDraw" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TilesToDrawTest.tilePileShouldHaveNinetyFiveTilesAfterFirstDraw" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aep2020" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.berkeley.aep.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.berkeley.aep" />
+      <option name="MAIN_CLASS_NAME" value="edu.berkeley.aep.TilesToDrawTest" />
+      <option name="METHOD_NAME" value="tilePileShouldHaveNinetyFiveTilesAfterFirstDraw" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.NumberedTileTest" />
-      <item itemvalue="JUnit.HonorTileTest" />
-      <item itemvalue="JUnit.HonorTileTest.fourWhiteDragonKangShouldBeLegal" />
       <item itemvalue="JUnit.TilesToDrawTest" />
       <item itemvalue="JUnit.TilesToDrawTest.startOfGameShouldHaveHundredFortyEightTiles" />
+      <item itemvalue="JUnit.TilesToDrawTest.tilePileShouldHaveHundredSeventyThreeTilesAfterFirstDraw" />
+      <item itemvalue="JUnit.TilesToDrawTest.tilePileShouldHaveNinetyFiveTilesAfterFirstDraw" />
+      <item itemvalue="JUnit.TilesToDrawTest.playerTwoThreeFourShouldStartWithFourteenTiles" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TilesToDrawTest.startOfGameShouldHaveHundredFortyEightTiles" />
         <item itemvalue="JUnit.TilesToDrawTest" />
-        <item itemvalue="JUnit.HonorTileTest" />
-        <item itemvalue="JUnit.NumberedTileTest" />
-        <item itemvalue="JUnit.HonorTileTest.fourWhiteDragonKangShouldBeLegal" />
+        <item itemvalue="JUnit.TilesToDrawTest.playerTwoThreeFourShouldStartWithFourteenTiles" />
+        <item itemvalue="JUnit.TilesToDrawTest.tilePileShouldHaveNinetyFiveTilesAfterFirstDraw" />
+        <item itemvalue="JUnit.TilesToDrawTest.tilePileShouldHaveHundredSeventyThreeTilesAfterFirstDraw" />
+        <item itemvalue="JUnit.TilesToDrawTest.startOfGameShouldHaveHundredFortyEightTiles" />
       </list>
     </recent_temporary>
   </component>
@@ -405,7 +416,7 @@
       <workItem from="1584660844440" duration="3499000" />
       <workItem from="1584747233805" duration="72000" />
       <workItem from="1587325504451" duration="11111000" />
-      <workItem from="1587372928713" duration="1957000" />
+      <workItem from="1587372928713" duration="4767000" />
     </task>
     <task id="LOCAL-00001" summary="add mj">
       <created>1587329540414</created>
@@ -463,43 +474,50 @@
       <option name="project" value="LOCAL" />
       <updated>1587366883765</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="refactored code + added kang check">
+      <created>1587574095088</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1587574095088</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HonorTileTest - 2020.04.20 at 15h 06m 10s.xml">
-      <configuration name="HonorTileTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HonorTileTest_fourWhiteDragonKangShouldBeLegal - 2020.04.20 at 15h 08m 26s.xml">
-      <configuration name="HonorTileTest.fourWhiteDragonKangShouldBeLegal" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NumberedTileTest - 2020.04.20 at 15h 11m 19s.xml">
-      <configuration name="NumberedTileTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HonorTileTest - 2020.04.20 at 15h 11m 50s.xml">
-      <configuration name="HonorTileTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TilesToDrawTest - 2020.04.23 at 00h 36m 33s.xml">
+    <history-entry file="TilesToDrawTest - 2020.04.23 at 01h 20m 23s.xml">
       <configuration name="TilesToDrawTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TilesToDrawTest - 2020.04.23 at 00h 36m 58s.xml">
+    <history-entry file="TilesToDrawTest - 2020.04.23 at 01h 23m 33s.xml">
       <configuration name="TilesToDrawTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TilesToDrawTest - 2020.04.23 at 00h 43m 15s.xml">
+    <history-entry file="TilesToDrawTest_tilePileShouldHaveNinetyFiveTilesAfterFirstDraw - 2020.04.23 at 01h 25m 27s.xml">
+      <configuration name="TilesToDrawTest.tilePileShouldHaveNinetyFiveTilesAfterFirstDraw" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TilesToDrawTest_tilePileShouldHaveNinetyFiveTilesAfterFirstDraw - 2020.04.23 at 01h 26m 08s.xml">
+      <configuration name="TilesToDrawTest.tilePileShouldHaveNinetyFiveTilesAfterFirstDraw" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TilesToDrawTest_tilePileShouldHaveNinetyFiveTilesAfterFirstDraw - 2020.04.23 at 01h 26m 35s.xml">
+      <configuration name="TilesToDrawTest.tilePileShouldHaveNinetyFiveTilesAfterFirstDraw" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TilesToDrawTest - 2020.04.23 at 01h 32m 34s.xml">
       <configuration name="TilesToDrawTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TilesToDrawTest - 2020.04.23 at 00h 44m 28s.xml">
+    <history-entry file="TilesToDrawTest - 2020.04.23 at 01h 34m 24s.xml">
       <configuration name="TilesToDrawTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TilesToDrawTest - 2020.04.23 at 00h 44m 37s.xml">
-      <configuration name="TilesToDrawTest" configurationId="JUnit" />
+    <history-entry file="TilesToDrawTest_playerTwoThreeFourShouldStartWithFourteenTiles - 2020.04.23 at 01h 35m 14s.xml">
+      <configuration name="TilesToDrawTest.playerTwoThreeFourShouldStartWithFourteenTiles" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TilesToDrawTest - 2020.04.23 at 00h 44m 48s.xml">
+    <history-entry file="TilesToDrawTest_playerTwoThreeFourShouldStartWithFourteenTiles - 2020.04.23 at 01h 35m 30s.xml">
+      <configuration name="TilesToDrawTest.playerTwoThreeFourShouldStartWithFourteenTiles" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TilesToDrawTest - 2020.04.23 at 01h 35m 43s.xml">
       <configuration name="TilesToDrawTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20251000" />
+    <option name="totallyTimeSpent" value="23061000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -514,37 +532,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.26752505" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49785408" weight="0.32771084" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32963988" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32963988" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50214595" side_tool="true" weight="0.32771084" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32891566" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.26752505" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26752505" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -572,7 +560,7 @@
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
-    </layout-to-restore>
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -691,20 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/berkeley/aep/Tile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/berkeley/aep/NumberedTile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/berkeley/aep/HonorTile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
@@ -722,10 +696,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/edu/berkeley/aep/NumberedTileTest.java">
+    <entry file="file://$PROJECT_DIR$/test/edu/berkeley/aep/HonorTileTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
+        <state relative-caret-position="480">
+          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -747,31 +721,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/edu/berkeley/aep/HonorTileTest.java">
+    <entry file="file://$PROJECT_DIR$/test/edu/berkeley/aep/NumberedTileTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+        <state relative-caret-position="783">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/berkeley/aep/Tile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/berkeley/aep/NumberedTile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/berkeley/aep/TilesToDraw.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="347">
+          <caret line="72" column="73" selection-start-line="72" selection-start-column="73" selection-end-line="72" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#149#155#0" expanded="true" />
+            <element signature="e#1550#1556#0" expanded="true" />
+            <element signature="e#1604#1610#0" expanded="true" />
+            <element signature="e#1658#1664#0" expanded="true" />
+            <element signature="e#1712#1718#0" expanded="true" />
+            <element signature="e#1874#1891#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/edu/berkeley/aep/TilesToDrawTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="377">
+          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

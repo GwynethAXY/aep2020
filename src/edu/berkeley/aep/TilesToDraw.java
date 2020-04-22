@@ -1,12 +1,13 @@
 package edu.berkeley.aep;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class TilesToDraw {
-    List<Tile> beginningTiles=new ArrayList<Tile>();
+    ArrayList<Tile> beginningTiles=new ArrayList<Tile>();
 
-    public List<Tile> initTiles(){
+    public ArrayList<Tile> initTiles(){
         for (NumberedTile.Suit suit : NumberedTile.Suit.values()){
             for(NumberedTile.Number number: NumberedTile.Number.values()){
                 for(NumberedTile.Id id : NumberedTile.Id.values()){
@@ -27,20 +28,49 @@ public class TilesToDraw {
             }
         }
 
-        for (BonusTile.Flower flower: BonusTile.Flower.values()){
-            beginningTiles.add(new BonusTile(flower));
-        }
+        for (BonusTile.Flower flower: BonusTile.Flower.values()) beginningTiles.add(new BonusTile(flower));
 
-        for (BonusTile.Season season: BonusTile.Season.values()){
-            beginningTiles.add(new BonusTile(season));
-        }
 
-        for (BonusTile.Animal animal: BonusTile.Animal.values()){
-            beginningTiles.add(new BonusTile(animal));
-        }
+        for (BonusTile.Season season: BonusTile.Season.values()) beginningTiles.add(new BonusTile(season));
+
+        for (BonusTile.Animal animal: BonusTile.Animal.values()) beginningTiles.add(new BonusTile(animal));
+
 
         System.out.println("size of beginningTiles: " + beginningTiles.size());
 
         return beginningTiles;
+    }
+
+    public ArrayList<ArrayList<Tile>> firstDraw(ArrayList<Tile> tiles) {
+        Collections.shuffle(tiles);
+        tiles = (ArrayList<Tile>) tiles;
+        ArrayList<Tile> playerOne = new ArrayList<Tile>();
+        ArrayList<Tile> playerTwo = new ArrayList<Tile>();
+        ArrayList<Tile> playerThree = new ArrayList<Tile>();
+        ArrayList<Tile> playerFour = new ArrayList<Tile>();
+        ArrayList<ArrayList<Tile>> result = new ArrayList<ArrayList<Tile>>();
+        int i = 148;
+        int tracker = 1;
+        while (i > 95){
+            Tile tile = tiles.remove(0);
+            if(tracker % 4 == 1) playerOne.add(tile);
+            else if (tracker % 4 == 2) playerTwo.add(tile);
+            else if (tracker % 4 == 3) playerThree.add(tile);
+            else if (tracker % 4 == 0) playerFour.add(tile);
+            tracker += 1;
+            i -= 1;
+        }
+//            System.out.println("size of tiles: " + tiles.size());
+        System.out.println("size of playerOne: " + playerOne.size());
+        System.out.println("size of playerTwo: " + playerTwo.size());
+        System.out.println("size of playerThree: " + playerThree.size());
+        System.out.println("size of playerFour: " + playerFour.size());
+        result.add(tiles);
+        result.add(playerOne);
+        result.add(playerTwo);
+        result.add(playerThree);
+        result.add(playerFour);
+        System.out.println("size of result: " + result.indexOf(playerFour));
+        return result;
     }
 }
