@@ -34,10 +34,33 @@ public class TilesToDrawTest {
     public void playerTwoThreeFourShouldStartWithFourteenTiles(){
         TilesToDraw startGame = new TilesToDraw();
         ArrayList<Tile> startingTiles = startGame.initTiles();
-        ArrayList<ArrayList<Tile>> result = startGame.firstDraw(startingTiles);
-        assertEquals(13,result.get(2).size());
-        assertEquals(13,result.get(3).size());
-        assertEquals(13,result.get(4).size());
+        ArrayList<ArrayList<Tile>> tileDeckAndPlayerHands = startGame.firstDraw(startingTiles);
+        assertEquals(13,tileDeckAndPlayerHands.get(2).size());
+        assertEquals(13,tileDeckAndPlayerHands.get(3).size());
+        assertEquals(13,tileDeckAndPlayerHands.get(4).size());
+    }
+
+    @Test
+    public void replenishTilesFromBackOfTileDeckAfterDrawingBonusTile(){
+        TilesToDraw startGame = new TilesToDraw();
+        ArrayList<Tile> tileDeck = new ArrayList<Tile>();
+        tileDeck.add(new NumberedTile(NumberedTile.Suit.DOTS, NumberedTile.Number.NINE, NumberedTile.Id.ONE));
+        tileDeck.add(new NumberedTile(NumberedTile.Suit.CHARACTER, NumberedTile.Number.NINE, NumberedTile.Id.TWO));
+        tileDeck.add(new NumberedTile(NumberedTile.Suit.DOTS, NumberedTile.Number.FOUR, NumberedTile.Id.TWO));
+
+        tileDeck = startGame.replenishFlowers(tileDeck).get(0);
+
+        ArrayList<Tile> desiredDeck = new ArrayList<Tile>();
+        desiredDeck.add(new NumberedTile(NumberedTile.Suit.DOTS, NumberedTile.Number.NINE, NumberedTile.Id.ONE));
+        desiredDeck.add(new NumberedTile(NumberedTile.Suit.CHARACTER, NumberedTile.Number.NINE, NumberedTile.Id.TWO));
+
+        assertEquals(((NumberedTile) desiredDeck.get(0)).suit,((NumberedTile)tileDeck.get(0)).suit);
+        assertEquals(((NumberedTile) desiredDeck.get(0)).number,((NumberedTile)tileDeck.get(0)).number);
+        assertEquals(((NumberedTile) desiredDeck.get(0)).id,((NumberedTile)tileDeck.get(0)).id);
+        assertEquals(((NumberedTile) desiredDeck.get(1)).suit,((NumberedTile)tileDeck.get(1)).suit);
+        assertEquals(((NumberedTile) desiredDeck.get(1)).number,((NumberedTile)tileDeck.get(1)).number);
+        assertEquals(((NumberedTile) desiredDeck.get(1)).id,((NumberedTile)tileDeck.get(1)).id);
+
     }
 
 }
