@@ -43,14 +43,15 @@ public class TilesToDrawTest {
     @Test
     public void replenishTilesFromBackOfTileDeckAfterDrawingBonusTile(){
         TilesToDraw startGame = new TilesToDraw();
-        ArrayList<Tile> tileDeck = new ArrayList<Tile>();
+        ArrayList<Tile> tileDeck = new ArrayList<>();
+
         tileDeck.add(new NumberedTile(NumberedTile.Suit.DOTS, NumberedTile.Number.NINE, NumberedTile.Id.ONE));
         tileDeck.add(new NumberedTile(NumberedTile.Suit.CHARACTER, NumberedTile.Number.NINE, NumberedTile.Id.TWO));
         tileDeck.add(new NumberedTile(NumberedTile.Suit.DOTS, NumberedTile.Number.FOUR, NumberedTile.Id.TWO));
 
         tileDeck = startGame.replenishFlowers(tileDeck).get(0);
 
-        ArrayList<Tile> desiredDeck = new ArrayList<Tile>();
+        ArrayList<Tile> desiredDeck = new ArrayList<>();
         desiredDeck.add(new NumberedTile(NumberedTile.Suit.DOTS, NumberedTile.Number.NINE, NumberedTile.Id.ONE));
         desiredDeck.add(new NumberedTile(NumberedTile.Suit.CHARACTER, NumberedTile.Number.NINE, NumberedTile.Id.TWO));
 
@@ -62,5 +63,35 @@ public class TilesToDrawTest {
         assertEquals(((NumberedTile) desiredDeck.get(1)).id,((NumberedTile)tileDeck.get(1)).id);
 
     }
+
+    @Test
+    public void eachTileDrawShouldBeFromFront(){
+        TilesToDraw startGame = new TilesToDraw();
+        ArrayList<Tile> tileDeck = new ArrayList<>();
+
+        tileDeck.add(new NumberedTile(NumberedTile.Suit.DOTS, NumberedTile.Number.FOUR, NumberedTile.Id.TWO));
+        tileDeck.add(new NumberedTile(NumberedTile.Suit.DOTS, NumberedTile.Number.NINE, NumberedTile.Id.ONE));
+        tileDeck.add(new NumberedTile(NumberedTile.Suit.CHARACTER, NumberedTile.Number.NINE, NumberedTile.Id.TWO));
+
+
+        tileDeck = startGame.drawTile(tileDeck).get(0);
+
+        ArrayList<Tile> desiredDeck = new ArrayList<>();
+        desiredDeck.add(new NumberedTile(NumberedTile.Suit.DOTS, NumberedTile.Number.NINE, NumberedTile.Id.ONE));
+        desiredDeck.add(new NumberedTile(NumberedTile.Suit.CHARACTER, NumberedTile.Number.NINE, NumberedTile.Id.TWO));
+
+        assertEquals(((NumberedTile) desiredDeck.get(0)).suit,((NumberedTile)tileDeck.get(0)).suit);
+        assertEquals(((NumberedTile) desiredDeck.get(0)).number,((NumberedTile)tileDeck.get(0)).number);
+        assertEquals(((NumberedTile) desiredDeck.get(0)).id,((NumberedTile)tileDeck.get(0)).id);
+        assertEquals(((NumberedTile) desiredDeck.get(1)).suit,((NumberedTile)tileDeck.get(1)).suit);
+        assertEquals(((NumberedTile) desiredDeck.get(1)).number,((NumberedTile)tileDeck.get(1)).number);
+        assertEquals(((NumberedTile) desiredDeck.get(1)).id,((NumberedTile)tileDeck.get(1)).id);
+    }
+
+//    @Test
+//    public void gameShouldEndWhenTileDeckHasFifteenTilesLeft(){
+//        TilesToDraw game = new TilesToDraw();
+//    }
+
 
 }

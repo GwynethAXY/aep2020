@@ -77,6 +77,11 @@ public class NumberedTile implements Tile {
         return false;
     }
 
+//    @Override
+//    public int hashCode() {
+//        return Integer.hashCode(this));
+//    }
+
     public void chow(){
 
     }
